@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src = "/LOGO.png" class = "logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   <div class="fas"> <i class="fa-solid fa-xmark" onclick="closemenu()"></i></div>
+                </ul>
+               <div class="fas"> <i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+            </nav>
+            <div class="header-text">
+                <p>Web Devloper</p>
+                <h1>Hello, I'm <span>Jeny</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------About----------  -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/jeny.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Jeny, a passionate Frontend Web Developer who loves turning creative ideas into sleek, user-friendly digital experiences. I specialize in crafting responsive, intuitive interfaces using modern web technologies. I enjoy bringing designs to life with clean code, attention to detail, and a strong focus on user experience. Always learning, always building! 🚀</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Additional Information')">Additional Information</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java</li>
+                            <li><span>Database</span><br>SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Dev tools</span><br>VS Code, Github</li>
+                            <li><span>Core CS Concept</span><br>Data Structures & Algorithms(DSA)<br>Computer Network , DBMS, OOPS</li>
+                            <li><span>Tools</span><br>Microsoft, Power Point</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently I am a Fresher</span><br>2025 passout batch from B-Tech college</li>
+                        </ul>
+                    </div><div class="tab-contents" id="Additional Information">
+                        <ul>
+                            <li><span>Technical Skills</span><br>Project Management<br>Frontend Development</li>
+                            <li><span>Soft Skills</span><br>Time Management<br>Teamwork<br>Communication<br>Leadership</li>
+                            <li><span>Hobbey</span><br>Cycling<br>Crafting</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------Education------------------- -->
+
+    <div id="Education">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="Education-list">
+                 <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Bachelor of Technology(B-Tech)</h2>
+                    <p>Department - Information Technology <br> Netaji subhash engineering college <BR> University - MAKAUT <br> CGPA - 8.25</p>
+                    <a href="#">learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Higher Secondary(12th)</h2>
+                    <p>Subject - PCM<br>Gurukul Vidyapeeth<br>Board - CBSE <Br> Percentage - 95.8%</p>
+                    <a href="#">learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Secondary</h2>
+                    <p>St. John's Academy<br>Board - CBSE<BR>Percentage - 90.4%</p>
+                    <a href="#">learn more</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------projects---------------------------- -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="project-list">
+            <div class="project1">
+                <img src="/doctor.avif"width="300" height="380">
+                <div class="layer">
+                    <h3>Med Care</h3>
+                    <p>Developed a web-based hospital management system using HTML, CSS, and JavaScript, enabling
+patient record management and improving user interaction with an intuitive interface.
+</p>
+                    <a href="https://jeny-2003.github.io/Medcare/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>    
+            <div class="project1">
+                <img src="/Screenshot (114).png" height="380" width="200" >
+                <div class="layer">
+                    <h3>Pizza-Sales-SQL</h3>
+                    <p>Developed a SQL-based analysis to track pizza sales performance using complex queries, joins, and
+aggregate functions.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>     
+             <div class="project1">
+                <img src="/Screenshot (113).png" height="380">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>Designed and implemented an interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript,
+featuring dynamic gameplay and real-time win detection.
+</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="project1">
+                <img src="/work-1.png">
+                <div class="layer">
+                    <h3>Number Guessing Game</h3>
+                    <p>Built an interactive console-based game in Java where users guess a randomly generated number,
+enhancing logic building and programming skills.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----------------------------contact---------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jenyhjp@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>8804527893</p>
+                <div class="social-icon">
+                    <a href="linkedin.com/in/jeny-sharma-49a5b1285 "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=" "><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" "><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/Jeny-2003 "><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="/Jenyresume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                <button type="Submit" class="btn btn2">Submit</button>
+            </form> 
+            </div>
+        
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copywrite @ Jeny. Made with  <i class="fa-solid fa-heart"></i>love and Happiness</p>
+    </div>
+ </div>
+
+<!-- ----------------------------Script--------------------------------- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    
+
+    <body>
+</html>
